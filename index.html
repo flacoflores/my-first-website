@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </nav>
+    <h1>Hello, World!</h1>
+    <img src="https://picsum.photos/600/300" alt="A random photo" style="width: 100%; border-radius: 8px;">
+    <p>This is my first website. Try editing this file and watch the page update.</p>
+    <button onclick="sayHello()">Click me</button>
+    <p id="message"></p>
+
+    <h2>About Me</h2>
+    <p>I'm learning how to build websites from scratch using HTML, CSS, and JavaScript. This page is my playground for experimenting with web development concepts.</p>
+
+    <h2>What I'm Learning</h2>
+    <p>HTML gives a page its structure -- headings, paragraphs, images, and links. CSS controls how everything looks -- colors, spacing, fonts, and layout. JavaScript makes things interactive -- responding to clicks, changing content, and more.</p>
+
+    <h2>My Projects</h2>
+    <img src="https://picsum.photos/600/250?random=2" alt="Project photo" style="width: 100%; border-radius: 8px;">
+    <p>This is where I'll showcase the projects I build as I continue learning. Every great developer started with a simple page just like this one.</p>
+
+    <h2>Favorite Tools</h2>
+    <ul>
+        <li>VS Code - for writing code</li>
+        <li>Chrome DevTools - for debugging</li>
+        <li>Live Server - for seeing changes instantly</li>
+        <li>GitHub - for saving and sharing code</li>
+    </ul>
+
+    <h2>Goals</h2>
+    <ol>
+        <li>Understand HTML structure</li>
+        <li>Style pages with CSS</li>
+        <li>Add interactivity with JavaScript</li>
+        <li>Build a multi-page website</li>
+        <li>Learn a frontend framework</li>
+    </ol>
+
+    <h2>Contact</h2>
+    <p>Want to connect? Feel free to reach out. I'm always happy to chat about web development and learn from others in the community.</p>
+
+    <footer>
+        <p>&copy; 2026 My First Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function sayHello() {
+            document.getElementById('message').textContent = 'You clicked the button!';
+        }
+    </script>
+</body>
+</html>
