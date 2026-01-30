@@ -84,10 +84,99 @@ nav a:hover {
     color: #3498db;
 }
 
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.card {
+    background-color: #3a3f4b;
+    padding: 16px;
+    border-radius: 8px;
+    flex: 1 1 150px;
+    box-sizing: border-box;
+}
+
+.card h3 {
+    color: #3498db;
+    margin: 0 0 6px 0;
+}
+
+.card p {
+    margin: 0;
+}
+
+.goals-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.goal {
+    background-color: #3a3f4b;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+}
+
 footer {
     background-color: #ffffff;
     color: #000000;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
+}
+
+/* Tablets and smaller (768px and below) */
+@media (max-width: 768px) {
+    body {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    nav {
+        gap: 15px;
+        padding: 12px 15px;
+    }
+}
+
+/* Tablets and smaller - grid */
+@media (max-width: 768px) {
+    .goals-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Phones (480px and below) */
+@media (max-width: 480px) {
+    body {
+        margin-top: 60px;
+        padding: 10px;
+    }
+
+    nav {
+        gap: 10px;
+        padding: 10px 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .goals-grid {
+        grid-template-columns: 1fr;
+    }
 }
