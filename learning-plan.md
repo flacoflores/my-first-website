@@ -1,27 +1,25 @@
 # Web Developer Learning Plan
 
-## What I've learned so far
-- HTML structure
-- CSS styling
-- Basic JavaScript
+## Completed
+- HTML structure (headings, paragraphs, images, links, lists, semantic elements)
+- CSS styling (colors, fonts, spacing, borders, pseudo-elements, shared stylesheets)
+- CSS Layout (flexbox, grid, calc(), fr units)
+- Responsive Design (media queries, breakpoints, device testing)
+- JavaScript fundamentals (variables, DOM manipulation, event listeners, arrays, loops, conditionals, fetch API)
 - Multi-page sites
 - Git & GitHub
 
-## What to learn next (in order)
+## Up next
 
-### 1. CSS Layout
-Flexbox and CSS Grid. These are used everywhere for positioning elements on a page. Practice by rebuilding layouts you see on real websites.
+### 1. JavaScript (remaining concepts)
+- localStorage - save data that persists after page refresh
+- Form handling - reading inputs, validation, preventing default behavior
+- Array methods - `.map()`, `.filter()`, `.find()` (used constantly in React)
 
-### 2. Responsive Design
-Making sites work on phones, tablets, and desktops using media queries. Almost every job requires this.
+### 2. React
+The most in-demand frontend framework. Builds directly on everything learned so far. HTML becomes JSX, CSS works the same, JavaScript is the core.
 
-### 3. JavaScript (deeper)
-Variables, functions, arrays, objects, DOM manipulation, events, fetch API for loading data. This is the biggest skill gap between beginners and hirable developers.
-
-### 4. React
-The most in-demand frontend framework. Once your JavaScript is solid, learn React. Most job listings ask for it.
-
-### 5. Build projects
+### 3. Build projects
 A portfolio of 3-5 projects matters more than certificates. Ideas: a to-do app, a weather app using an API, a personal portfolio site.
 
 ## What makes you hirable
