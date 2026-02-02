@@ -1,12 +1,13 @@
 # Session Notes - Learning Web Development
 
 ## What I Built
-A multi-page website with a dark theme, navigation bar, footer, images, cards, and responsive design.
+A multi-page website with dark/light theme toggle, navigation bar, footer, images, cards, responsive design, and dynamic content loaded from an API.
 
 ## Files in the Project
-- `index.html` - Home page with hero section, cards, goals grid, and interactive button
+- `index.html` - Home page with hero section, cards, goals grid, quote section, and interactive buttons
 - `about.html` - About page with personal sections
 - `style.css` - Shared stylesheet used by both pages
+- `script.js` - Shared JavaScript: theme toggle, click counter, dynamic goals, fetch API
 - `learning-plan.md` - Roadmap for becoming a web developer
 
 ## Concepts Covered
@@ -63,10 +64,40 @@ A multi-page website with a dark theme, navigation bar, footer, images, cards, a
 - Testing: Chrome DevTools device simulator (Cmd + Option + I, then Cmd + Shift + M)
 
 ### JavaScript Basics
-- `<script>` tag for adding JavaScript
+- `<script>` tag for inline JS, `<script src="script.js">` for external JS file
 - `document.getElementById()` to select an element
 - `.textContent` to change text
-- `onclick` attribute to handle button clicks
+- `document.createElement()` to create new HTML elements
+- `.className` to set CSS classes on elements
+- `.appendChild()` to add elements to the page
+- `classList.toggle()`, `classList.contains()` to add/remove/check CSS classes
+
+### Variables & State
+- `var count = 0` to track state between interactions
+- Variables defined outside event listeners persist between calls
+
+### Event Listeners
+- `element.addEventListener('click', function)` - the proper way to handle events
+- Keeps JavaScript separate from HTML (better than `onclick=""` in HTML)
+- Can pass a named function: `addEventListener('click', getQuote)` (no parentheses)
+
+### Arrays & Loops
+- `var goals = ['...', '...']` - arrays store lists of values
+- `goals.length` - how many items in the array
+- `for (var i = 0; i < goals.length; i++)` - loop through each item
+- Arrays start at index 0
+
+### Conditionals
+- `if / else if / else` for branching logic
+- `===` for strict equality comparison
+
+### Fetch API
+- `fetch(url)` - makes an HTTP request to load data
+- Returns a Promise (a value that arrives in the future)
+- `.then(function (response) { return response.json(); })` - parse the response
+- Chain `.then()` calls to process data step by step
+- `.catch()` to handle errors (no internet, API down, etc.)
+- Asynchronous - doesn't block the page while waiting
 
 ### Git & GitHub
 - `git init` - start a repo
